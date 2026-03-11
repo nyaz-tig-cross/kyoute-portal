@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="大学入学共通テスト「情報Ⅰ」および「情報関係基礎」の問題をベースにした、体験型シミュレーション教材のポータルサイトです。">
+    <title>共通テスト 情報科目 シミュレータ・問題アプリ集</title>
+    <style>
+        /* 全体の基本設定 */
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        /* ヘッダー */
+        header {
+            background-color: #00695c; 
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        /* メインコンテナ */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem 4rem;
+        }
+
+        /* 大科目（情報Ⅰ / 情報関係基礎）の見出し */
+        .subject-title {
+            background-color: #004d40; /* ヘッダーより少し濃い緑で引き締める */
+            color: white;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* 年度ごとのセクション設定 */
+        .year-section {
+            margin-bottom: 3.5rem;
+            padding-left: 1rem; /* 大科目から少しインデントして階層を表現 */
+        }
+
+        /* 年度見出しのデザイン */
+        .year-title {
+            font-size: 1.3rem;
+            color: #00695c;
+            border-bottom: 2px solid #00695c;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* グリッドレイアウトの設定 (レスポンシブ対応) */
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* 各アプリのカード */
+        .app-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            display: flex;
+            flex-direction: column;
+            border-top: 4px solid #00695c;
+        }
+
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+        }
+
+        .app-card h4 {
+            margin: 0 0 0.5rem;
+            font-size: 1.1rem;
+            color: #00695c;
+        }
+
+        .app-card p {
+            margin: 0;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #555;
+            flex-grow: 1;
+        }
+
+        .app-card .tag {
+            display: inline-block;
+            background-color: #e0f2f1;
+            color: #004d40;
+            font-size: 0.8rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 999px;
+            margin-top: 1rem;
+            align-self: flex-start;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>共通テスト 情報科目 シミュレータ・問題アプリ集</h1>
+        <p>過去問や予想問題をブラウザ上で動かして確認できる体験型教材です</p>
+    </header>
+
+    <div class="container">
+        
+        <h2 class="subject-title">情報Ⅰ（2025年度以降）</h2>
+
+        <section class="year-section">
+            <h3 class="year-title">2026年度（令和8年度）</h3>
+            <div class="app-grid">
+                <a href="https://nyaz-tig-cross.github.io/2026-Dai01-toi02/" class="app-card" target="_blank" rel="noopener noreferrer">
+                    <h4>第１問 問２ クロスステッチ刺繍図案変換アプリ</h4>
+                    <p>第１問　問２をブラウザ上で再現しました。クロスステッチに応じた16進数変換をシミュレーション・クイズ形式で解答できます。</p>
+                    <span class="tag">デジタル表現・16進数</span>
+                </a>
+                <a href="https://nyaz-tig-cross.github.io/2026-Dai01-toi04/" class="app-card" target="_blank" rel="noopener noreferrer">
+                    <h4>第１問 問４ 電子メール送信プロセス　シミュレータ</h4>
+                    <p>第１問　問４の電子メールの流れを、出題内容に応じたメール間の動きと誤りを可視化しました。</p>
+                    <span class="tag">ネットワーク・メール送受信</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="year-section">
+            <h3 class="year-title">2025年度（令和7年度）</h3>
+            <div class="app-grid">
+                <a href="https://nyaz-tig-cross.github.io/Dai3-toi01/" class="app-card" target="_blank" rel="noopener noreferrer">
+                    <h4>追試験 第3問 問１・問２<br>　プログラミング問題</h4>
+                    <p>2025年度追試験に出題されたプログラミング問題です。クラスメートがごみ回収する手続きをプログラムで示す問題。</p>
+                    <span class="tag">コンピュータとプログラミング</span>
+                </a>
+                 <a href="https://nyaz-tig-cross.github.io/Dai3-toi03/" class="app-card" target="_blank" rel="noopener noreferrer">
+                    <h4>追試験 第3問 問３<br>　プログラミング問題</h4>
+                    <p>2025年度追試験に出題されたプログラミング問題です。問３なので問１・２を踏まえての解答となります。</p>
+                    <span class="tag">コンピュータとプログラミング</span>
+                </a>
+                <a href="https://nyaz-tig-cross.github.io/saidaichi-enshu/" class="app-card" target="_blank" rel="noopener noreferrer">
+                    <h4>最大値　演習　プログラミング問題</h4>
+                    <p>2025年度第３問　問３をもとにして作成した練習問題です。</p>
+                    <span class="tag">コンピュータとプログラミング</span>
+                </a>
+            </div>
+        </section>
+
+
+        <h2 class="subject-title">情報関係基礎（2024年度以前）</h2>
+
+        <section class="year-section">
+            <h3 class="year-title">2024年度（令和6年度）</h3>
+            <div class="app-grid">
+                <a href="https://nyaz-tig-cross.github.io/2024-Dai1-toi03/" class="app-card" target="_blank" rel="noopener noreferrer">
+                    <h4>本試験 第１問 問３ デジタル画像とデータの埋め込みシミュレーション</h4>
+                    <p>デジタル画像の各画素を8bit グレースケールで可視化したシミュレーション。出題内容と同じくLSB法で文字データを埋め込むこともできます。</p>
+                    <span class="tag">画像のデジタル化</span>
+                </a>
+            </div>
+            <h3 class="year-title">2019年度（令和元年度）</h3>
+            <div class="app-grid">
+                <a href="https://nyaz-tig-cross.github.io/2019-Dai1-toi02/" class="app-card" target="_blank" rel="noopener noreferrer">
+                    <h4>本試験 第１問 問２ 階段照明電子回路シミュレータ</h4>
+                    <p>３階建ておよび４階建ての建物の階段照明の設置回路をシミュレーションしました。出題内容に応じた反応を確認できます。</p>
+                    <span class="tag">コンピュータの仕組み</span>
+                </a>
+            </div>    
+        </section>
+
+        </div>
+
+</body>
+</html>
